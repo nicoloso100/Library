@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryDTOs\LibraryDTOs.csproj" />
-    <ProjectReference Include="..\Utils\Utils.csproj" />
+    <ProjectReference Include="..\Utils\LibraryUtils.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
