@@ -27,7 +27,7 @@ namespace LibraryServices
             var foundUser = users.ToList().FirstOrDefault(user => user.UserName.Equals(auth.Username) && user.Password.Equals(auth.Password));
             if(foundUser is not null)
             {
-                var token = GenerarToken(foundUser);
+                var token = GenerateToken(foundUser);
 
                 return token;
             }
@@ -35,7 +35,7 @@ namespace LibraryServices
             return null;
         }
 
-        private JwtSecurityToken GenerarToken(DTOUser login)
+        private JwtSecurityToken GenerateToken(DTOUser login)
         {
             string ValidIssuer = _configuration["ApiAuth:Issuer"];
             string ValidAudience = _configuration["ApiAuth:Audience"];
