@@ -34,12 +34,13 @@
             <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']">Sync</a>
+            <a class="nav-link text-dark" [routerLink]="['/sync']">Sync</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Books</a
-            >
+            <a class="nav-link text-dark" [routerLink]="['/books']">Books</a>
+          </li>
+          <li class="nav-item cursor">
+            <a class="nav-link text-danger" (click)="signOut()">Sign Out</a>
           </li>
         </ul>
       </div>

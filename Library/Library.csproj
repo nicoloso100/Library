@@ -27,6 +27,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryDTOs\LibraryDTOs.csproj" />
+    <ProjectReference Include="..\LibraryRepository\LibraryRepository.csproj" />
+    <ProjectReference Include="..\LibraryServices\LibraryServices.csproj" />
     <ProjectReference Include="..\Utils\LibraryUtils.csproj" />
   </ItemGroup>
 

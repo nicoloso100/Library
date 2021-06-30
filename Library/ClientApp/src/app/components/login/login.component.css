@@ -1,0 +1,36 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.sidenav {
+  flex: 1;
+  background-color: #000;
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  flex: 1;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.login-main-text {
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+
+.login-main-text h2 {
+  font-weight: 300;
+}
+
+.btn-black {
+  background-color: #000 !important;
+  color: #fff;
+}

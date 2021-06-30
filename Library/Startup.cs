@@ -1,3 +1,5 @@
+using LibraryServices;
+using LibraryUtils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,6 +28,11 @@ namespace Library
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddHttpClient<LibraryHttpClient>();
+
+            services.AddSingleton<IAuthServices, AuthServices>();
+
 
             services.AddAuthentication(options =>
             {
